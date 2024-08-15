@@ -1,5 +1,6 @@
 import axios from "axios";
+const dotenv = require("dotenv");
 
-const baseURL = "http://localhost:3177/";
+const baseURL = REACT_BASE_URL
 
 export default axios.create({ baseURL: baseURL });
