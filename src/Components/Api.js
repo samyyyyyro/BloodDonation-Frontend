@@ -1,6 +1,7 @@
 import axios from "axios";
-const dotenv = require("dotenv");
 
-const baseURL = REACT_BASE_URL
+// Accessing the environment variable
+const baseURL = process.env.REACT_APP_BASE_URL;
 
+// Creating an Axios instance with the base URL
 export default axios.create({ baseURL: baseURL });
